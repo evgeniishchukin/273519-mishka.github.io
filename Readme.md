@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Щукин](https://up.htmlacademy.ru/adaptive/9/user/273519).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов](https://vk.com/im?tab=all).
 
 ---
 
