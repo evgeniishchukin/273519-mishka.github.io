@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__logo-link" href="/index.html">
+        <a class="page-header__logo-link" href="index.html">
           <img scr="#" width="86" height="35" alt="Мишка - Изделия ручной вязки.">
         </a>
       </div>
@@ -16,15 +16,15 @@
         <a class="main-nav__toggle">Открыть меню</a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
-            <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
             <li class="main-nav__item">
               <form class="site-search" action="#" method="get">
                 <label class="visually-hidden" for="searchfield">Поиск по сайту</label>
                 <input class="site-search__search-field" name="searchquery" id="searchfield">
               </form>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link">Корзина:<span class="cart-value">пока пуста</span></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="cart.html">Корзина:<span class="cart-value">пока пуста</span></a></li>
           </ul>
         </div>
       </nav>
@@ -34,7 +34,7 @@
       <div class="knitting-order__wrapper">
         <h1 class="knitting-order__title">Вязание на заказ</h1>
         <p class="knitting-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="form-knitting-order">
+        <form class="form-knitting-order" action="#" method="post">
           <h2 class="form-knitting-order__title">тип</h2>
           <label class="form-knitting-order__label">
             <input class="form-knitting-order__input-type" type="radio" name="interior-accessory" id="type-accessory" checked>
