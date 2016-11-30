@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html">
+          <img scr="#" width="86" height="35" alt="Мишка - Изделия ручной вязки.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav-nojs">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+            <li class="main-nav__item">
+              <form class="site-search" action="#" method="get">
+                <label class="visually-hidden" for="searchfield">Поиск по сайту</label>
+                <input class="site-search__search-field" name="searchquery" id="searchfield">
+              </form>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="cart.html">Корзина:<span class="cart-value">пока пуста</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="knitting-order">
+      <div class="knitting-order__wrapper">
+        <h1 class="knitting-order__title">Вязание на заказ</h1>
+        <p class="knitting-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="form-knitting-order" action="#" method="post">
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">тип</legend>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-type" type="radio" name="type-product" id="type-accessory" checked>
+              <span class="form-knitting-order__radio-indicator"></span>
+              Аксессуар для интерьера
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-type" type="radio" name="type-product" id="type-toy">
+              <span class="form-knitting-order__radio-indicator"></span>
+              Детская игрушка
+            </label>
+          </fieldset>
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">цвет</legend>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="white" id="color-white" checked>
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Белый
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="gray" id="color-gray" checked>
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Серый
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="gray" id="color-gray">
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Серый
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="tiffani" id="color-tiffani">
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              &laquo;Тиффани&raquo;
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="black" id="color-black">
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Черный
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="pink" id="color-pink">
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Розовый
+            </label>
+            <label class="form-knitting-order__label">
+              <input class="form-knitting-order__input-color" type="checkbox" name="orange" id="color-orange">
+              <span class="form-knitting-order__checkbox-indicator"></span>
+              Оранжевый
+            </label>
+          </fieldset>
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">фио</legend>
+            <label class="form-knitting-order__label" for="fullname-name">Имя:</label>
+            <input class="form-knitting-order__input-fullname" type="text" name="name" id="fullname-name" placeholder="Введите ваше имя*" required>
+            <label class="form-knitting-order__label" for="fullname-surname">Фамилия:</label>
+            <input class="form-knitting-order__input-fullname" type="text" name="surname" id="fullname-surname" placeholder="Укажите фамилию*" required>
+            <label class="form-knitting-order__label" for="fullname-patronymic">Отчество:</label>
+            <input class="form-knitting-order__input-fullname" type="text" name="patronymic" id="fullname-patronymic" placeholder="Отчество, если желаете">
+          </fieldset>
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">тел</legend>
+            <label class="form-knitting-order__label visually-hidden" for="phone-number">Телефон</label>
+            <input class="form-knitting-order__input-phone" type="tel" name="phone" id="phone-number" placeholder="+7 XXX XX XX*" pattern="\+7\ [0-9]{3}\ [0-9]{2}\ [0-9]{2}" required>
+          </fieldset>
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">e-mail</legend>
+            <label class="form-knitting-order__label visually-hidden" for="email-address">E-mail</label>
+            <input class="form-knitting-order__input-email" type="email" name="email" id="email-address" placeholder="Ваш Email*" required>
+          </fieldset>
+          <fieldset class="form-knitting-order__form-block">
+            <legend class="form-knitting-order__title">доп</legend>
+            <label class="form-knitting-order__label visually-hidden" for="additional-info-text">Дополнительная информация</label>
+            <textarea class="form-knitting-order__additional-info" name="additional-info" id="additional-info-text">
+              Опишите все ваши пожелания к заказу
+            </textarea>
+          </fieldset>
+          <span class="form-knitting-order__hint"><sup>*</sup>Поля обязательны для заполнения</span>
+          <button class="form-knitting-order__submit button" type="submit">отправить заказ</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a href="#" class="social-link social-link--inst">Мы в Инстаграмме</a>
+            <a href="#" class="social-link social-link--fb">Мы в Фейсбуке</a>
+            <a href="#" class="social-link social-link--tw">Мы в Твиттере</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано:
+            <img class="page-footer__copyright-image" scr="#" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

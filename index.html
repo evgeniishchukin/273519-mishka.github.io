@@ -6,7 +6,161 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <h1 class="visually-hidden">Интернет-магазин "Мишка" - Изделия ручной вязки.</h1>
+      <div class="page-header__logo">
+        <img scr="#" width="86" height="35" alt="Мишка - Изделия ручной вязки.">
+      </div>
+      <nav class="main-nav main-nav--closed main-nav-nojs">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+            <li class="main-nav__item">
+              <form class="site-search" action="#" method="get">
+                <label class="visually-hidden" for="searchfield">Поиск по сайту</label>
+                <input class="site-search__search-field" name="searchquery" id="searchfield">
+              </form>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="cart.html">Корзина:<span class="cart-value">пока пуста</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="products">
+      <div class="products__wrapper">
+        <h2 class="products__title">Милые штуки ручной работы для дома</h2>
+        <div class="product-types">
+          <a class="product-types__link" href="home-accessories.html">Предметы интерьера</a>
+          <a class="product-types__link" href="kids-toys.html">Детские игрушки</a>
+        </div>
+      </div>
+    </section>
+    <article class="week-product">
+      <div class="week-product__wrapper">
+        <h2>Вязанные корзинки</h2>
+        <h3 class="week-product__title">товар недели</h3>
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="product-features">
+          <div class="product-features__color">
+            <div class="product-features__title">Цвет</div>
+            <div class="product-features__value">
+              <span>&laquo;Тиффани&raquo;/серый</span>
+            </div>
+          </div>
+          <div class="product-features__diametr">
+            <div class="product-features__title">Диаметр</div>
+            <div class="product-features__value">
+              <span>25 см</span>
+            </div>
+          </div>
+          <div class="product-features__height">
+            <div class="product-features__title">Цвет</div>
+            <div class="product-features__value">
+              <span>15 см</span>
+            </div>
+          </div>
+        </div>
+        <div class="week-product__image">
+          <img scr="#" width="260" height="380" alt="Вязанные корзинки">
+        </div>
+        <p class="week-product__price">Цена:<span>990 руб.</span></p>
+        <a class="button" href="knitted-baskets.html">заказать</a>
+      </div>
+    </article>
+    <section class="about-us">
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отчественого производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__items">
+          <blockquote class="reviews__item">
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite>Анастасия Красильникова</cite>
+            <span>@misssssiskras</span>
+          </blockquote>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <a class="reviews__write button" href="write-review.html">написать</a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__mail">
+          <div class="contacts__title">e-mail:</div>
+          <div class="contacts__value">
+            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+        </div>
+        <div class="contacts__adress">
+          <div class="contacts__title">адрес:</div>
+          <div class="contacts__value">
+            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img scr="#" width="320" height="457" alt="Местоположение на карте">
+        </div>
+        <a class="contacts__feedback button" href="write-feedback.html">напишите нам</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a href="#" class="social-link social-link--inst">Мы в Инстаграмме</a>
+            <a href="#" class="social-link social-link--fb">Мы в Фейсбуке</a>
+            <a href="#" class="social-link social-link--tw">Мы в Твиттере</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано:
+            <img class="page-footer__copyright-image" scr="#" width="27" height="34" alt="HTML Academy">
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <section class="modal-cart">
+      <div class="modal-cart__wrapper">
+        <h2 class="modal-cart__title">добавить в корзину</h2>
+        <form class="form-size"  action="#" method="post">
+          Выберите размер:
+          <label class="form-size__label">
+            <input class="form-size__input-size form-size__input-size--s" type="radio" name="size" id="size-s" checked>
+            <span class="form-size__radio-indicator"></span>
+            S
+          </label>
+          <label class="form-size__label">
+            <input class="form-size__input-size form-size__input-size--m" type="radio" name="size" id="size-m">
+            <span class="form-size__radio-indicator"></span>
+            M
+          </label>
+          <label class="form-size__label">
+            <input class="form-size__input-size form-size__input-size--l" type="radio" name="size" id="size-l">
+            <span class="form-size__radio-indicator"></span>
+            L
+          </label>
+          <button class="form-size__add button" type="submit" value="add_size">добавить</button>
+        </form>
+      </div>
+    </section>
 
   </body>
 </html>
