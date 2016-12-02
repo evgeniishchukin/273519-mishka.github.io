@@ -1,0 +1,85 @@
+.form-knitting-order {
+  border: 1px solid black;
+}
+
+.form-knitting-order__form-block {
+  padding-bottom: 23px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: $color-lightgreen;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.form-knitting-order__form-block:last-child {
+  margin-top: -27px;
+  padding-bottom: 0;
+
+  border: none;
+}
+
+.form-knitting-order__legend {
+  @include opensansbold;
+
+  padding-left: 0;
+
+  min-width: 62px;
+
+  font-size: 17px;
+  line-height: 1em;
+  color: $color-lightgreen;
+  text-transform: uppercase;
+}
+
+.form-knitting-order__label {
+  @include opensansbold;
+
+  display: block;
+  margin-top: 23px;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form-knitting-order__input-fullname,
+.form-knitting-order__input-phone,
+.form-knitting-order__input-email {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-darkgray;
+
+  border: transparent;
+  border-bottom: 2px solid $color-darkgray;
+  outline: none;
+}
+
+.form-knitting-order__additional-info {
+  padding: 15px;
+  margin-top: 23px;
+  min-height: 123px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-darkgray;
+
+  border: 2px solid $color-darkgray;
+}
+
+.form-knitting-order__hint {
+  display: block;
+  padding-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-knitting-order__submit {
+  position: relative;
+  left: 50%;
+  margin-left: -128px;
+}

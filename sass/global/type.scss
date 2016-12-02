@@ -1,0 +1,60 @@
+/* Types
+   ========================================================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  @include opensans;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+
+  @include opensansbold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+
+  @include opensansbold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+
+  @include opensansbold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+}
+
+cite {
+  @include opensansbold;
+  font-size: 18px;
+  line-height: 24px;
+}

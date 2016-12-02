@@ -1,0 +1,25 @@
+.about-us {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+}
+
+.about-us__wrapper {
+  @include wrapper-min;
+}
+
+.about-us__list {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__item {
+  padding-top: 60px;
+
+  @include opensansbold;
+  font-size: 17px;
+  line-height: 1.2em;
+}

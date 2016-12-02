@@ -1,0 +1,48 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 39px;
+
+  border: 1px solid black;
+}
+
+.contacts__wrapper {
+  @include wrapper-min;
+}
+
+.contacts__all {
+  display: table;
+
+  color: $color-darkgray;
+
+  border-collapse: collapse;
+}
+
+.contacts__type {
+  display: table-row;
+}
+
+.contacts__name {
+  display: table-cell;
+  width: 75px;
+}
+
+.contacts__value {
+  display: table-cell;
+}
+
+.contacts__value a {
+  color: $color-darkgray;
+}
+
+.contacts__wrapper-map {
+  @include wrapper-middle;
+}
+
+.contacts__map {
+  margin-top: 40px;
+  margin-bottom: 39px;
+
+  width: 320px;
+  height: 457px;
+  overflow: visible;
+}

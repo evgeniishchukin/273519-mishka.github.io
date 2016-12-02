@@ -1,0 +1,19 @@
+::-webkit-input-placeholder {
+  color: #000000;
+}
+::-moz-placeholder {
+  color: #000000;
+}
+:-ms-input-placeholder {
+  color: #000000;
+}
+
+.site-search__search-field {
+  border: none;
+
+  @include opensansbold ;
+  font-size: 17px;
+  line-height: 24px;
+
+  outline: none;
+}

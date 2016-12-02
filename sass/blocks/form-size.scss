@@ -1,0 +1,50 @@
+.form-size {
+  border: 1px solid black;
+  text-align: center;
+
+  font-size: 0;
+}
+
+.form-size__description {
+  margin-top: 24px;
+  margin-bottom: 28px;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-darkgray;
+}
+
+.form-size__label {
+  display: inline-block;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 78px;
+  margin-bottom: 31px;
+  margin-right: 7px;
+
+  @include opensansbold;
+  font-size: 17px;
+  line-height: 1em;
+  color: $color-darkgray;
+
+  border: 2px solid $color-lightgreen;
+
+  &:nth-child(3n+1) {
+    margin-right: 0;
+  }
+}
+
+.form-size__input-size {
+  display: none;
+}
+
+.form-size__add {
+  position: relative;
+  left: 50%;
+  margin-left: -128px;
+
+  border-color: $color-lightgreen;
+  background-color: $color-lightgreen;
+  color: #ffffff;
+}

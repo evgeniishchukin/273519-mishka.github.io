@@ -1,0 +1,26 @@
+.product-features {
+  display: table;
+  margin-top: 32px;
+  width: 100%;
+
+  line-height: 20px;
+  border-collapse: collapse;
+  color: $color-darkgray;
+
+  border: 1px solid black;
+}
+
+.product-features__parametr {
+  display: table-row;
+
+  border-bottom: 1px solid $color-border-gray
+}
+
+.product-features__title {
+  display: table-cell;
+  padding-right: 31px;
+}
+
+.product-features__value {
+  display: table-cell;
+}
