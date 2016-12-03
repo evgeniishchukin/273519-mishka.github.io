@@ -1,0 +1,22 @@
+.knitting-order {
+  border: 1px solid black;
+}
+
+.knitting-order__title {
+  margin-top: 0;
+  padding-top: 75px;
+  padding-bottom: 71px;
+
+  text-align: center;
+
+  background-color: $color-lightgray;
+}
+
+.knitting-order__wrapper {
+  @include wrapper-min;
+}
+
+.knitting-order__description {
+  font-size: 13px;
+  line-height: 24px;
+}

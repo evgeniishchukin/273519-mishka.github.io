@@ -1,0 +1,44 @@
+.week-product {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  border: 1px solid black;
+}
+
+.week-product__wrapper {
+  @include wrapper-min;
+}
+
+.week-product__descritption h2 {
+  margin-bottom: 8px;
+}
+
+.week-product__title {
+  color: $color-lightgreen;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.week-product__descritption p {
+  margin-top: 32px;
+  line-height: 24px;
+  color: $color-darkgray;
+}
+
+.week-product__image {
+  margin-top: 28px;
+
+  width: 260px;
+  height: 315px;
+  border: 1px solid black;
+}
+
+.week-product__price {
+  padding-top: 29px;
+  padding-bottom: 28px;
+
+  @include opensansbold;
+  font-size: 17px;
+  line-height: 1em;
+  text-align: center;
+  color: $color-darkgray;
+}

@@ -1,0 +1,15 @@
+.modal-cart {
+  padding-top: 35px;
+
+  border-top: 1px solid $color-border-gray;
+  border-bottom: 1px solid $color-border-gray;
+}
+
+.modal-cart__wrapper {
+  @include wrapper-min;
+}
+
+.modal-cart__title {
+  text-transform: uppercase;
+  text-align: center;
+}

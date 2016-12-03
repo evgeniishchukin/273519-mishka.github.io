@@ -1,0 +1,23 @@
+@mixin opensans {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin opensansbold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin wrapper-min {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin wrapper-middle {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}

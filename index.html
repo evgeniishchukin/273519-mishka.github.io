@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <h1 class="visually-hidden">Интернет-магазин "Мишка" - Изделия ручной вязки.</h1>
       <div class="page-header__logo">
-        <img scr="#" width="86" height="35" alt="Мишка - Изделия ручной вязки.">
+        <a class="page-header__logo-link" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - Изделия ручной вязки.">
+        </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav-nojs">
         <button class="main-nav__toggle">Открыть меню</button>
@@ -20,10 +22,10 @@
             <li class="main-nav__item">
               <form class="site-search" action="#" method="get">
                 <label class="visually-hidden" for="searchfield">Поиск по сайту</label>
-                <input class="site-search__search-field" name="searchquery" id="searchfield">
+                <input class="site-search__search-field" name="searchquery" id="searchfield" placeholder="Поиск по сайту">
               </form>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="cart.html">Корзина:<span class="cart-value">пока пуста</span></a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="cart.html">Корзина: <span class="main-nav__cart-value">пока пуста</span></a></li>
           </ul>
         </div>
       </nav>
@@ -31,42 +33,44 @@
 
     <section class="products">
       <div class="products__wrapper">
-        <h2 class="products__title">Милые штуки ручной работы для дома</h2>
+        <h1 class="products__title">Милые штуки<br> ручной<br> работы для дома</h1>
         <div class="product-types">
-          <a class="product-types__link" href="home-accessories.html">Предметы интерьера</a>
-          <a class="product-types__link" href="kids-toys.html">Детские игрушки</a>
+          <a class="product-types__link" href="home-accessories.html">Предметы<br> интерьера</a>
+          <a class="product-types__link" href="kids-toys.html">Детские<br> игрушки</a>
         </div>
       </div>
     </section>
     <article class="week-product">
       <div class="week-product__wrapper">
-        <h2>Вязанные корзинки</h2>
-        <h3 class="week-product__title">товар недели</h3>
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="week-product__descritption">
+          <h2>Вязанные корзинки</h2>
+          <h3 class="week-product__title">товар недели</h3>
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        </div>
         <div class="product-features">
-          <div class="product-features__color">
-            <div class="product-features__title">Цвет</div>
+          <div class="product-features__parametr">
+            <div class="product-features__title">Цвет:</div>
             <div class="product-features__value">
               <span>&laquo;Тиффани&raquo;/серый</span>
             </div>
           </div>
-          <div class="product-features__diametr">
-            <div class="product-features__title">Диаметр</div>
+          <div class="product-features__parametr">
+            <div class="product-features__title">Диаметр:</div>
             <div class="product-features__value">
               <span>25 см</span>
             </div>
           </div>
-          <div class="product-features__height">
-            <div class="product-features__title">Цвет</div>
+          <div class="product-features__parametr">
+            <div class="product-features__title">Высота</div>
             <div class="product-features__value">
               <span>15 см</span>
             </div>
           </div>
         </div>
         <div class="week-product__image">
-          <img scr="#" width="260" height="380" alt="Вязанные корзинки">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
         </div>
-        <p class="week-product__price">Цена:<span>990 руб.</span></p>
+        <p class="week-product__price">Цена:<span> 990 руб.</span></p>
         <a class="button" href="knitted-baskets.html">заказать</a>
       </div>
     </article>
@@ -92,29 +96,38 @@
             <cite>Анастасия Красильникова</cite>
             <span>@misssssiskras</span>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="reviews__buttons">
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
           <a class="reviews__write button" href="write-review.html">написать</a>
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <div class="contacts__mail">
-          <div class="contacts__title">e-mail:</div>
+        <h2 class="contacts_title">Контакты</h2>
+        <div class="contacts__all">
+          <div class="contacts__type">
+            <div class="contacts__name">e-mail:</div>
+            <div class="contacts__value">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+          </div>
+        <div class="contacts__type">
+          <div class="contacts__name">адрес:</div>
           <div class="contacts__value">
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <p>г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__adress">
-          <div class="contacts__title">адрес:</div>
-          <div class="contacts__value">
-            <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          </div>
-        </div>
+       </div>
+      </div>
+      <div class="contacts__wrapper-map">
         <div class="contacts__map">
-          <img scr="#" width="320" height="457" alt="Местоположение на карте">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Местоположение на карте">
         </div>
+      </div>
+      <div class="contacts__wrapper">
         <a class="contacts__feedback button" href="write-feedback.html">напишите нам</a>
       </div>
     </section>
@@ -129,9 +142,9 @@
           </span>
         </p>
         <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">          Разработано</a>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            Разработано:
-            <img class="page-footer__copyright-image" scr="#" width="27" height="34" alt="HTML Academy">
+            <img class="page-footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </p>
       </div>
@@ -139,9 +152,9 @@
 
     <section class="modal-cart">
       <div class="modal-cart__wrapper">
-        <h2 class="modal-cart__title">добавить в корзину</h2>
+        <h2 class="modal-cart__title">добавить<br> в корзину</h2>
         <form class="form-size"  action="#" method="post">
-          Выберите размер:
+          <p class="form-size__description">Выберите размер:</p>
           <label class="form-size__label">
             <input class="form-size__input-size form-size__input-size--s" type="radio" name="size" id="size-s" checked>
             <span class="form-size__radio-indicator"></span>
