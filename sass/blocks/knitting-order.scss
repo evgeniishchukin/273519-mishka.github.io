@@ -1,11 +1,7 @@
-.knitting-order {
-  border: 1px solid black;
-}
-
 .knitting-order__title {
   margin-top: 0;
-  padding-top: 75px;
-  padding-bottom: 71px;
+  padding-top: 149px;
+  padding-bottom: 77px;
 
   text-align: center;
 
@@ -13,10 +9,43 @@
 }
 
 .knitting-order__wrapper {
-  @include wrapper-min;
+  @include wrapper;
 }
 
 .knitting-order__description {
+  padding-top: 22px;
+  padding-bottom: 23px;
+
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .knitting-order__title {
+    margin-top: -47px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+
+    border-top: 1px solid $color-border-gray;
+  }
+
+  .knitting-order__wrapper {
+    @include clearfix;
+  }
+
+  .knitting-order__description {
+    padding-top: 74px;
+    padding-bottom: 68px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .knitting-order__description {
+    width: 700px;
+    margin-top: 73px;
+    margin-left: 175px;
+  }
 }

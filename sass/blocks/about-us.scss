@@ -1,25 +1,82 @@
 .about-us {
-  padding-top: 32px;
+  padding-top: 27px;
   padding-bottom: 30px;
-  border: 1px solid black;
 }
 
 .about-us__wrapper {
-  @include wrapper-min;
+  @include wrapper;
 }
 
 .about-us__list {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 0;
 
   list-style: none;
 }
 
 .about-us__item {
-  padding-top: 60px;
+  padding-top: 45px;
+  padding-bottom: 38px;
 
-  @include opensansbold;
   font-size: 17px;
   line-height: 1.2em;
+
+  @include opensansbold;
+}
+
+.about-us__item:last-child {
+  padding-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    @include clearfix;
+  }
+
+  .about-us__list {
+    margin-top: 57px;
+
+    @include clearfix;
+  }
+
+  .about-us__title {
+    margin-top: 50px;
+    margin-left: -5px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+
+  .about-us__item:nth-child(-n+3) {
+    float: left;
+    width: 335px;
+    margin-bottom: 24px;
+  }
+
+  .about-us__item:nth-child(n+4) {
+    float: right;
+    width: 333px;
+  }
+
+  .about-us__item:nth-child(4) {
+    margin-top: -310px;
+  }
+
+  .about-us__item:nth-child(5) {
+    margin-top: -155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    width: 668px;
+  }
+
+  .about-us__title {
+    margin-top: 85px;
+    margin-left: -19px;
+  }
 }
