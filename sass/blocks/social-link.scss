@@ -1,14 +1,13 @@
 .social-link {
   display: inline-block;
-  margin-right: 41px;
 
   vertical-align: middle;
-
-  border: 1px solid black;
 
   &--inst {
     width: 22px;
     height: 21px;
+    margin-right: 41px;
+    margin-left: -2px;
 
     background: transparent url("../../img/icon-insta.svg") no-repeat;
   }
@@ -16,6 +15,7 @@
   &--fb {
     width: 15px;
     height: 28px;
+    margin-right: 39px;
 
     background: transparent url("../../img/icon-fb.svg") no-repeat;
   }

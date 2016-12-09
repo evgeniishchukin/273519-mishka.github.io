@@ -1,19 +1,19 @@
 .button {
-  @include opensansbold;
-
   display: block;
   width: 256px;
   padding-top: 16px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 
   font-size: 17px;
   line-height: 1em;
+  text-align: center;
   color: $color-darkgray;
   text-transform: uppercase;
-  text-align: center;
 
   background-color: transparent;
   border: 2px solid $color-darkgray;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
+
+  @include opensansbold;
 }

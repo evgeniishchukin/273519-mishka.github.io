@@ -1,20 +1,22 @@
 .contacts {
-  padding-top: 40px;
+  padding-top: 41px;
   padding-bottom: 39px;
-
-  border: 1px solid black;
 }
 
 .contacts__wrapper {
-  @include wrapper-min;
+  @include wrapper;
+}
+
+.contacts__title {
+  font-size: 18px;
 }
 
 .contacts__all {
   display: table;
-
-  color: $color-darkgray;
+  margin-top: 16px;
 
   border-collapse: collapse;
+  color: $color-darkgray;
 }
 
 .contacts__type {
@@ -23,7 +25,9 @@
 
 .contacts__name {
   display: table-cell;
-  width: 75px;
+  width: 77px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .contacts__value {
@@ -34,15 +38,99 @@
   color: $color-darkgray;
 }
 
-.contacts__wrapper-map {
-  @include wrapper-middle;
-}
-
 .contacts__map {
-  margin-top: 40px;
-  margin-bottom: 39px;
-
   width: 320px;
   height: 457px;
+  margin: 0 auto;
+  margin-top: 37px;
+  margin-bottom: 39px;
   overflow: visible;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 94px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__wrapper {
+    @include clearfix;
+  }
+
+  .contacts__title {
+    margin-left: -4px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__all {
+    margin-top: 39px;
+  }
+
+  .contacts__type {
+    display: block;
+    float: left;
+    margin-right: 53px;
+  }
+
+  .contacts__type:last-child {
+    margin-right: 0;
+  }
+
+  .contacts__map {
+    position: relative;
+
+    width: 768px;
+    height: 457px;
+    margin-top: 56px;
+
+    background: url("../../img/map-tablet@1x.jpg") no-repeat;
+  }
+  .contacts__map img {
+    display: none;
+  }
+
+  .contacts__feedback {
+    width: 226px;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 228px;
+    padding-bottom: 107px;
+  }
+
+  .contacts__title {
+    margin-left: 170px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__map {
+    position: relative;
+    top: -380px;
+    left: 263px;
+
+    width: 525px;
+    height: 457px;
+    overflow: hidden;
+
+    background: url("../../img/map-tablet@1x.jpg") no-repeat;
+  }
+
+  .contacts__all {
+    width: 350px;
+    margin-left: 172px;
+  }
+
+  .contacts__feedback {
+    width: 226px;
+    margin-top: -473px;
+    margin-left: 175px;
+  }
 }

@@ -2,39 +2,45 @@
    ========================================================================== */
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
-  @include opensans;
   font-size: 15px;
   line-height: 30px;
+
+  @include opensans;
 }
+
 
 h1 {
   margin: 0;
   padding: 0;
 
-  @include opensansbold;
   font-size: 27px;
   line-height: 30px;
+
+  @include opensansbold;
 }
 
 h2 {
   margin: 0;
   padding: 0;
 
-  @include opensansbold;
   font-size: 25px;
   line-height: 30px;
+
+  @include opensansbold;
 }
 
 h3 {
   margin: 0;
   padding: 0;
 
-  @include opensansbold;
   font-size: 17px;
   line-height: 24px;
+
+  @include opensansbold;
 }
 
 p {
@@ -54,7 +60,32 @@ blockquote {
 }
 
 cite {
-  @include opensansbold;
   font-size: 18px;
   line-height: 24px;
+
+  @include opensansbold;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 17px;
+  }
+
+  h1,
+  h2 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  h1,
+  h2 {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

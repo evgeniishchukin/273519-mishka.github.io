@@ -1,15 +1,43 @@
 .modal-cart {
-  padding-top: 35px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 
+  display: none;
+  width: 320px;
+  min-height: 275px;
+  margin-top: -169px;
+  margin-left: -160px;
+  padding-top: 33px;
+  padding-bottom: 30px;
+
+  background-color: $color-white;
   border-top: 1px solid $color-border-gray;
   border-bottom: 1px solid $color-border-gray;
 }
 
-.modal-cart__wrapper {
-  @include wrapper-min;
-}
 
 .modal-cart__title {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-cart {
+    left: 50%;
+
+    width: 572px;
+    margin-left: -283px;
+  }
+
+  .modal-cart__title {
+    margin-left: 9px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-cart__title br {
+    display: none;
+  }
 }

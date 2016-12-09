@@ -10,14 +10,25 @@
   font-style: normal;
 }
 
-@mixin wrapper-min {
+@mixin wrapper {
   width: 260px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
-@mixin wrapper-middle {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+@mixin clearfix {
+  &::after {
+  content: "";
+
+  display: table;
+  clear: both;
+  }
 }
