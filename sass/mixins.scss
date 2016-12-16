@@ -1,3 +1,5 @@
+//Документ sass/mixins.scss
+
 @mixin opensans {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -11,18 +13,22 @@
 }
 
 @mixin wrapper {
-  width: 260px;
-  margin: 0 auto;
-  padding: 0;
+  padding-right: 9.375%;
+  padding-left: 9.375%;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    padding-left: 6.510416666666667%;
+    padding-right: 6.510416666666667%;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
+
 
 @mixin clearfix {
   &::after {

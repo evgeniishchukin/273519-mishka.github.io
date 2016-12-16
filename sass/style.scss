@@ -1,10 +1,10 @@
-// @import "normalize.scss";
+//Документ sass/style.scss
 
 @import "variables.scss";
 @import "mixins.scss";
 
 @import "global/fonts.scss";
-@import "global/type.scss";
+@import "global/types.scss";
 
 @import "blocks/about-us.scss";
 @import "blocks/button.scss";
@@ -12,18 +12,13 @@
 @import "blocks/catalog-item.scss";
 @import "blocks/contacts.scss";
 @import "blocks/form-knitting-order.scss";
-@import "blocks/form-size.scss";
 @import "blocks/knitting-order.scss";
-@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/modal-cart.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/product-features.scss";
-@import "blocks/products.scss";
 @import "blocks/product-types.scss";
 @import "blocks/reviews.scss";
-@import "blocks/site-search.scss";
 @import "blocks/social-link.scss";
 @import "blocks/social-links.scss";
 @import "blocks/visually-hidden.scss";

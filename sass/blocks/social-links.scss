@@ -1,16 +1,12 @@
-.social-links {
-  display: block;
-  width: 141px;
-  margin: 0 auto;
-  padding: 0;
+//Документ sass/blocks/social-links.scss
 
-  font-size: 0;
+.social-links {
+  display: flex;
+  flex-basis: 141px;
+  justify-content: space-between;
+  padding-bottom: 21px;
 }
 
-
 @media (min-width: $tablet-width) {
-  .social-links {
-    float: left;
-    margin-top: 34px;
-  }
+  padding-bottom: 0;
 }
