@@ -1,18 +1,25 @@
+//Документ sass/blocks/product-types.scss
+
 .product-types {
-  width: 320px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include wrapper;
 }
 
-.product-types__link {
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+.product-types__link-type {
+  position: relative;
+
+  flex-basis: 100%;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 29px;
 
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
-  text-decoration: none;
+  // font-size: 5.9375vw;
+  // line-height: 1.263157894736842em;
+  color: $color-white;
 
   @include opensansbold;
 
@@ -20,34 +27,67 @@
     background-color: $color-lightgreen;
   }
 
+  &:first-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11.25%;
+
+    width: 40px;
+    height: 62px;
+    margin-top: -31px;
+
+    background: url("../img/icon-interior.svg") no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.5;
+  }
+
   &:last-child {
     background-color: $color-darkgreen;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8.125%;
+
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+
+    background: url("../img/icon-toy.svg") no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    padding-top: 14px;
+    padding-bottom: 27px;
+  }
+
+  &:hover::after {
+    margin-top: -36px;
+  }
+
+  &:active {
+    color: #97e2d2;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .product-types {
-    width: auto;
+    flex-wrap: nowrap;
   }
 
-  .product-types__wrapper {
-    @include clearfix;
-    @include wrapper;
-  }
-
-  .product-types__link {
-    float: left;
-    width: 298px;
-    padding-top: 28px;
-    padding-left: 36px;
-
-    font-size: 19px;
+  .product-types__link-type {
+    font-size: 20px;
     line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .product-types__link {
-    width: 489px;
+    // font-size: 2.604166666666667vw;
+    // line-height: 1.5em;
   }
 }

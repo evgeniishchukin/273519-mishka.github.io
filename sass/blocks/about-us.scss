@@ -1,82 +1,98 @@
-.about-us {
-  padding-top: 27px;
-  padding-bottom: 30px;
-}
-
 .about-us__wrapper {
   @include wrapper;
 }
 
 .about-us__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 0;
 
   list-style: none;
 }
 
 .about-us__item {
-  padding-top: 45px;
-  padding-bottom: 38px;
+  position: relative;
+
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  padding-top: 56px;
 
   font-size: 17px;
+  // font-size: 5.3125vw;
   line-height: 1.2em;
 
   @include opensansbold;
-}
 
-.about-us__item:last-child {
-  padding-bottom: 5px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-position: center;
+  }
+
+  &:first-child::before {
+    width: 32px;
+    height: 37px;
+
+    background: url("../img/icon-feature-1.svg") no-repeat;
+  }
+
+  &:nth-child(2)::before {
+    width: 47px;
+    height: 27px;
+
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
+
+  &:nth-child(3)::before {
+    width: 34px;
+    height: 28px;
+
+    background: url("../img/icon-feature-5.svg") no-repeat;
+  }
+
+  &:nth-child(4)::before {
+    width: 35px;
+    height: 34px;
+
+    background: url("../img/icon-feature-2.svg") no-repeat;
+  }
+
+  &:nth-child(5)::before {
+    width: 55px;
+    height: 23px;
+
+    background: url("../img/icon-feature-4.svg") no-repeat;
+  }
+
+  &:last-child::before {
+    width: 33px;
+    height: 32px;
+
+    background: url("../img/icon-feature-6.svg") no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .about-us__wrapper {
-    @include clearfix;
-  }
-
-  .about-us__list {
-    margin-top: 57px;
-
-    @include clearfix;
-  }
-
-  .about-us__title {
-    margin-top: 50px;
-    margin-left: -5px;
-  }
-
   .about-us__item {
+    flex-basis: 50%;
+
     font-size: 20px;
-    line-height: 1.2em;
-  }
-
-  .about-us__item:nth-child(-n+3) {
-    float: left;
-    width: 335px;
-    margin-bottom: 24px;
-  }
-
-  .about-us__item:nth-child(n+4) {
-    float: right;
-    width: 333px;
-  }
-
-  .about-us__item:nth-child(4) {
-    margin-top: -310px;
-  }
-
-  .about-us__item:nth-child(5) {
-    margin-top: -155px;
+    // font-size: 2.604166666666667vw;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .about-us__wrapper {
-    width: 668px;
+  .about-us__list {
+    width: 700px;
   }
 
-  .about-us__title {
-    margin-top: 85px;
-    margin-left: -19px;
+  .about-us__wrapper {
+    box-sizing: border-box;
+    padding-left: 175px;
   }
 }
