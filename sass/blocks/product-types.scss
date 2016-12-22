@@ -1,18 +1,19 @@
 //Документ sass/blocks/product-types.scss
 
 .product-types {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 
-  @include wrapper;
+  z-index: 1;
 }
 
 .product-types__link-type {
   position: relative;
 
   flex-basis: 100%;
-  padding-top: 19px;
-  padding-bottom: 17px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   padding-left: 29px;
 
   font-size: 19px;
@@ -68,6 +69,7 @@
 
   &:hover::after {
     margin-top: -36px;
+    opacity: 0.7;
   }
 
   &:active {
@@ -82,6 +84,8 @@
 @media (min-width: $tablet-width) {
   .product-types {
     flex-wrap: nowrap;
+    @include wrapper;
+
   }
 
   .product-types__link-type {
@@ -89,5 +93,29 @@
     line-height: 30px;
     // font-size: 2.604166666666667vw;
     // line-height: 1.5em;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    padding-left: 36px;
+
+      &:last-child::after {
+        right: 10.2%;
+      }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-types__link-type {
+    margin-top: -1px;
+    padding-top: 27px;
+
+    &:first-child::after {
+      top: 61px;
+      right: 36px;
+      }
+
+  &:last-child::after {
+    top: 62px;
+    right: 35px;
+    }
   }
 }

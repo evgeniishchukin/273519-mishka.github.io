@@ -21,7 +21,7 @@
 
 .page-footer__copyright-link {
   flex-basis: 100%;
-  padding-top: 22px;
+  padding-top: 28px;
 
   font-size: 19px;
   // font-size: 5.9375vw;
@@ -32,24 +32,35 @@
   border-top: 1px solid $color-border-gray;
 
   @include opensansbold;
+
+  span {
+    display: none;
+  }
+
+  svg {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    margin-left: 22px;
+    margin-top: 1px;
+
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+   }
+
+   &:active svg {
+     fill: #46c1ae;
+   }
 }
 
-.page-footer__copyright-link span {
-  display: inline-block;
-  width: 27px;
-  height: 34px;
-  margin-left: 30px;
-
-  font-size: 0;
-  vertical-align: middle;
-
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
-}
-
-.page-footer__logo:active,
-.page-footer__copyright-link:active {
-  opacity: 0.3;
-}
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
@@ -64,13 +75,24 @@
     width: 102px;
     height: 34px;
 
-    background: url("../img/logo-footer.png") no-repeat;
-    background-position: 50% 50%;
+    &:hover svg {
+      fill: #46c1ae;
+    }
+
+    &:active svg {
+      fill: #bde3dd;
+    }
+
+    svg {
+      width: 102px;
+      height: 34px;
+    }
   }
 
   .page-footer__copyright-link {
     flex-basis: auto;
     padding-top: 0;
+    margin-top: 6px;
 
     border-top: none;
   }
