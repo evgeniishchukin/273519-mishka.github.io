@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   font-size: 15px;
   line-height: 30px;
@@ -74,6 +74,11 @@ cite {
   // line-height: 1.333333333333333em;
 
   @include opensansbold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {

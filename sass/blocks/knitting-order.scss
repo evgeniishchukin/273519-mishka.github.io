@@ -2,7 +2,7 @@
 
 .knitting-order__wrapper {
   padding-top: 23px;
-  padding-bottom: 55px;
+  padding-bottom: 42px;
 
   @include wrapper;
 }
@@ -19,12 +19,12 @@
 
 @media (min-width: $tablet-width) {
   .knitting-order__wrapper {
-    padding-top: 65px;
-    padding-bottom: 55px;
+    padding-top: 75px;
+    padding-bottom: 10px;
   }
 
   .knitting-order__description {
-    padding-bottom: 50px;
+    padding-bottom: 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -34,6 +34,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .knitting-order__wrapper {
+    padding-top: 126px;
+    padding-bottom: 9px;
+  }
+
   .knitting-order__description {
     width: 700px;
     margin: 0 auto;
