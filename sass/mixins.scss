@@ -1,14 +1,14 @@
 //Документ sass/mixins.scss
 
 @mixin opensans {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
 }
 
 @mixin opensansbold {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
 }
 
@@ -17,24 +17,24 @@
   padding-left: 9.375%;
 
   @media (min-width: $tablet-width) {
-    padding-left: 6.510416666666667%;
     padding-right: 6.510416666666667%;
+    padding-left: 6.510416666666667%;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 0 auto;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
 
 @mixin clearfix {
   &::after {
-  content: "";
+    content: "";
 
-  display: table;
-  clear: both;
+    display: table;
+    clear: both;
   }
 }
