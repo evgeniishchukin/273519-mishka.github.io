@@ -5,7 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -55,14 +55,15 @@
     </header>
 
     <section class="knitting-order">
+      <h2 class="visually-hidden">Параметры заказа</h2>
       <div class="knitting-order__wrapper">
         <p class="knitting-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form-knitting-order" action="#" method="post">
-          <fieldset class="form-knitting-order__form-block">
+          <div class="form-knitting-order__form-block">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">тип</legend>
+                  <div class="form-knitting-order__legend">тип</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper">
@@ -80,12 +81,12 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block">
+          </div>
+          <div class="form-knitting-order__form-block">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">цвет</legend>
+                  <div class="form-knitting-order__legend">цвет</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper form-knitting-order__flex-wrapper--size">
@@ -132,12 +133,13 @@
                   </label>
                 </div>
               </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block  form-knitting-order__form-block--padding">
+            </div>
+          </div>
+          <div class="form-knitting-order__form-block  form-knitting-order__form-block--padding">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">фио</legend>
+                  <div class="form-knitting-order__legend">фио</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper">
@@ -161,12 +163,12 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block form-knitting-order__form-block--padding">
+          </div>
+          <div class="form-knitting-order__form-block form-knitting-order__form-block--padding">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">тел</legend>
+                  <div class="form-knitting-order__legend">тел</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper">
@@ -178,12 +180,12 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block  form-knitting-order__form-block--padding">
+          </div>
+          <div class="form-knitting-order__form-block  form-knitting-order__form-block--padding">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">e-mail</legend>
+                  <div class="form-knitting-order__legend">e-mail</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper">
@@ -195,12 +197,12 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block form-knitting-order__form-block--padding">
+          </div>
+          <div class="form-knitting-order__form-block form-knitting-order__form-block--padding">
             <div class="form-knitting-order__flex-wrapper-big">
               <div class="form-knitting-order__flex-wrapper">
                 <div class="form-knitting-order__legend-flex">
-                  <legend class="form-knitting-order__legend">доп</legend>
+                  <div class="form-knitting-order__legend">доп</div>
                 </div>
               </div>
               <div class="form-knitting-order__flex-wrapper">
@@ -212,13 +214,13 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form-knitting-order__form-block">
+          </div>
+          <div class="form-knitting-order__form-block">
             <div class="form-knitting-order__flex-wrapper">
               <span class="form-knitting-order__hint">*Поля обязательны для заполнения</span>
               <button class="form-knitting-order__submit button" type="submit">отправить заказ</button>
             </div>
-          </fieldset>
+          </div>
         </form>
       </div>
     </section>
@@ -248,29 +250,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var blockTitle = document.querySelector('.page-header__title-block');
-      var navList = document.querySelector('.main-nav__list');
-
-      navMain.classList.remove('main-nav--nojs');
-      blockTitle.classList.remove('page-header__title-block--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navList.classList.contains('main-nav__list--closed')) {
-          navList.classList.remove('main-nav__list--closed');
-        } else {
-          navList.classList.add('main-nav__list--closed');
-        }
-
-        if (navToggle.classList.contains('main-nav__toggle--closed')) {
-          navToggle.classList.remove('main-nav__toggle--closed');
-        } else {
-          navToggle.classList.add('main-nav__toggle--closed');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

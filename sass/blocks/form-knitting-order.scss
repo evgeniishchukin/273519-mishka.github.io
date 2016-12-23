@@ -80,9 +80,9 @@
     margin-bottom: 10px;
   }
 
-  &--indent{
-    padding-left: 0;
+  &--indent {
     margin-top: 25px;
+    padding-left: 0;
   }
 
   &:hover {
@@ -108,10 +108,10 @@
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -27px;
 
   width: 36px;
   height: 36px;
+  margin-top: -27px;
 
   border: 2px solid $color-darkgray;
   border-radius: 50%;
@@ -145,10 +145,10 @@
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -18px;
 
   width: 36px;
   height: 35px;
+  margin-top: -18px;
 
   border: 2px solid $color-darkgray;
 }
@@ -217,29 +217,29 @@
 }
 
 .form-knitting-order__input-phone {
+  margin-top: 8px;
+
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 96.92307692307692% 50%;
   filter: grayscale(1);
-
-  margin-top: 8px;
 }
 
 .form-knitting-order__input-email {
+  margin-top: 8px;
+
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 98.46153846153846% 50%;
   filter: grayscale(1);
-
-  margin-top: 8px;
 }
 
 .form-knitting-order__additional-info {
   box-sizing: border-box;
   width: 100%;
   min-height: 141px;
-  padding-left: 15px;
   margin-top: 23px;
+  padding-left: 15px;
 
   border: 2px solid $color-darkgray;
 }
@@ -247,7 +247,7 @@
 .form-knitting-order__hint {
   display: block;
   flex-basis: 100%;
-  margin-top: -24px;
+  margin-top: -22px;
   padding-bottom: 29px;
 
   font-size: 14px;
@@ -261,9 +261,9 @@
   .form-knitting-order__flex-wrapper-big {
     display: flex;
     align-items: baseline;
+    margin-top: -6px;
     padding-top: 0;
     padding-bottom: 25px;
-    margin-top: -6px;
 
     .form-knitting-order__flex-wrapper {
       justify-content: flex-start;
@@ -340,7 +340,7 @@
   }
 
   .form-knitting-order__form-block:nth-child(6) .form-knitting-order__legend-flex {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .form-knitting-order__form-block:nth-child(4) .form-knitting-order__flex-wrapper-big {
@@ -359,7 +359,7 @@
   }
 
   .form-knitting-order__flex-wrapper {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .form-knitting-order__legend-flex {
@@ -378,7 +378,7 @@
     flex-basis: 50%;
 
     &:first-child {
-      padding-top: 10px
+      padding-top: 10px;
     }
 
     &:nth-child(2) {
@@ -400,8 +400,8 @@
     &:nth-child(6) {
       flex-grow: 1;
       flex-basis: 74.5%;
-      padding-right: 0;
       margin-top: 28px;
+      padding-right: 0;
     }
   }
 
@@ -427,16 +427,18 @@
   .form-knitting-order__input-type + .form-knitting-order__radio-indicator,
   .form-knitting-order__input-color + .form-knitting-order__checkbox-indicator {
     top: 33px;
+
+    box-sizing: border-box;
     width: 52px;
     height: 52px;
-    box-sizing: border-box;
   }
 
   .form-knitting-order__input-color + .form-knitting-order__checkbox-indicator {
-      top: 23px;
-      width: 54px;
-      height: 52px;
-    }
+    top: 23px;
+
+    width: 54px;
+    height: 52px;
+  }
 
   .form-knitting-order__input-type:checked + .form-knitting-order__radio-indicator::before,
   .form-knitting-order__input-type:active + .form-knitting-order__radio-indicator::before {
@@ -469,11 +471,12 @@
   .form-knitting-order__input-email,
   .form-knitting-order__additional-info {
     box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
     font-size: 19px;
     // font-size: 2.473958333333333vw;
     line-height: 1em;
-    padding-bottom: 10px;
-    padding-left: 17px;
   }
 
   .form-knitting-order__input-phone,
@@ -489,8 +492,8 @@
   }
 
   .form-knitting-order__additional-info {
-    padding-top: 14px;
     min-height: 142px;
+    padding-top: 14px;
   }
 
   .form-knitting-order__form-block:last-child .form-knitting-order__flex-wrapper {
@@ -503,10 +506,11 @@
   .form-knitting-order__hint {
     flex-basis: auto;
     order: 1;
+    margin-top: 12px;
     padding: 0;
+
     font-size: 17px;
     line-height: 30px;
-    margin-top: 12px;
   }
 
   .form-knitting-order__submit {
@@ -533,9 +537,19 @@
     flex-basis: 786px;
   }
 
+  .form-knitting-order__form-block:nth-child(4) .form-knitting-order__legend {
+    margin-left: -9px;
+  }
+
+  .form-knitting-order__form-block:nth-child(5) .form-knitting-order__legend {
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+
   .form-knitting-order__legend {
-    text-align: center;
     margin-left: -4px;
+
+    text-align: center;
   }
 
   .form-knitting-order__form-block:nth-child(2) .form-knitting-order__form-field-flex {
@@ -553,12 +567,10 @@
   }
 
   .form-knitting-order__input-phone {
-
     background-position: 99% 35%;
   }
 
   .form-knitting-order__input-email {
-
     background-position: 99.5% 50%;
   }
 
@@ -566,7 +578,7 @@
     margin-top: 0;
   }
 
-    .form-knitting-order__hint {
-      margin-top: 9px;
-    }
+  .form-knitting-order__hint {
+    margin-top: 9px;
+  }
 }

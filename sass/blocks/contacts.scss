@@ -1,6 +1,7 @@
 .contacts {
   padding-top: 42px;
   padding-bottom: 130px;
+  overflow-x: hidden;
 }
 
 .contacts__wrapper {
@@ -31,8 +32,9 @@
   }
 
   a {
-    color: $color-black;
     padding-bottom: 3px;
+
+    color: $color-black;
 
     border-bottom: 1px solid $color-lightgreen;
 
@@ -68,9 +70,10 @@
 
 .contacts__map {
   position: relative;
-  margin-top: -16px;
+
   flex-basis: 100%;
   height: 457px;
+  margin-top: -16px;
 
   &::before {
     content: "";
@@ -123,9 +126,9 @@
 
   .contacts__title {
     position: relative;
-    margin-left: -3px;
 
     flex-basis: 100%;
+    margin-left: -3px;
 
     &::after {
       content: "";
@@ -160,10 +163,11 @@
   }
 
   .contacts__feedback {
+    top: 568px;
+    left: 50%;
+
     width: 230px;
     margin-left: -115px;
-    left: 50%;
-    top: 568px;
   }
 
   .contacts__map {
@@ -212,8 +216,8 @@
   }
 
   .contacts__title {
-    margin-top: 76px;
     flex-basis: auto;
+    margin-top: 76px;
     &::after {
       top: 31px;
       left: -109px;
@@ -233,15 +237,13 @@
     }
   }
 
-
   .contacts__mail,
   .contacts__address {
     flex-basis: 100%;
   }
 
   .contacts__map {
-    flex-basis: 50%;
-
+    flex-basis: 525px;
 
     &::before {
       z-index: -1;
@@ -262,10 +264,10 @@
 
   .contacts__feedback {
     position: static;
-    margin-left: 0;
 
     width: 231px;
     margin-top: auto;
+    margin-left: 0;
   }
 }
 

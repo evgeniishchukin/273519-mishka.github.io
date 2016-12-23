@@ -5,7 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -143,7 +143,7 @@
           <a class="contacts__feedback button" href="write-feedback.html">напишите нам</a>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6232154632075!2d30.32190847417325!3d59.93862857211215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1481890934171"  frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6232154632075!2d30.32190847417325!3d59.93862857211215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1481890934171" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -195,49 +195,10 @@
           </div>
         </form>
       </div>
-      <div class="modal-cart__overlay">
+      <div class="modal-cart__overlay"></div>
     </section>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var blockTitle = document.querySelector('.page-header__title-block');
-      var navList = document.querySelector('.main-nav__list');
-
-      navMain.classList.remove('main-nav--nojs');
-      blockTitle.classList.remove('page-header__title-block--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navList.classList.contains('main-nav__list--closed')) {
-          navList.classList.remove('main-nav__list--closed');
-        } else {
-          navList.classList.add('main-nav__list--closed');
-        }
-
-        if (navToggle.classList.contains('main-nav__toggle--closed')) {
-          navToggle.classList.remove('main-nav__toggle--closed');
-        } else {
-          navToggle.classList.add('main-nav__toggle--closed');
-        }
-      });
-
-      var weekproductOrder = document.querySelector('.week-product__order');
-      var modalCart = document.querySelector('.modal-cart');
-      var modalCartOpent = document.querySelector('.modal-cart--open');
-
-      weekproductOrder.addEventListener('click', function(event) {
-        event.preventDefault();
-        modalCart.classList.add('modal-cart--open');
-      });
-
-      window.addEventListener ("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (modalCart.classList.contains("modal-cart--open")) {
-              modalCart.classList.remove("modal-cart--open");
-            }
-          }
-        });
-
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/script-index.js"></script>
   </body>
 </html>
