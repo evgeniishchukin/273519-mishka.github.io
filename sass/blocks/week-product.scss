@@ -1,26 +1,28 @@
 //Документ sass/blocks/week-product.scss
 .week-product {
   position: relative;
+
   padding-top: 28px;
   padding-bottom: 10px;
   &::before {
+    content: "";
+    position: absolute;
     top: 100%;
     left: 0;
-    position: absolute;
-    content: "";
-    width: 100vw;
+
+    width: 100%;
     height: 7px;
+
     background: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: contain;
     background-position: center;
+    background-size: contain;
   }
 }
 
 .week-product__wrapper {
   display: flex;
   flex-wrap: wrap;
-
 
   @include wrapper;
 }
@@ -30,7 +32,7 @@
   flex-wrap: wrap;
 
   h2 {
-    flex-basis: 100%;
+    width: 100%;
     padding-bottom: 3px;
   }
 }
@@ -55,7 +57,7 @@
 
   > p {
     // line-height: 1em;
-    flex-basis: 100%;
+    width: 100%;
     padding-bottom: 22px;
 
     line-height: 24px;
@@ -74,8 +76,8 @@
 
   p {
     flex-basis: 100%;
-    padding-bottom: 8px;
     padding-right: 30px;
+    padding-bottom: 8px;
 
     border-bottom: 1px solid $color-border-gray;
   }
@@ -116,10 +118,11 @@
 }
 
 .week-product__image {
-  text-align: center;
-  overflow: hidden;
-  line-height: 0;
   height: 315px;
+  overflow: hidden;
+
+  line-height: 0;
+  text-align: center;
 }
 
 @media (max-width: $tablet-width - 1) {
@@ -149,9 +152,10 @@
     padding-bottom: 28px;
     &::before {
       height: 20px;
+
       background-repeat: repeat-x;
-      background-size: contain;
       background-position: center;
+      background-size: contain;
     }
   }
 
@@ -169,12 +173,11 @@
 
   .week-product__title {
     flex-basis: 70px;
+    padding-top: 12px;
+
     font-size: 17px;
     line-height: 1em;
-
     text-align: center;
-    padding-top:  12px;
-
   }
 
   .week-product__description {
@@ -184,17 +187,19 @@
   }
 
   .week-product__description-info {
-    flex-basis: 50%;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding-right: 45px;
     box-sizing: border-box;
+    min-width: 334px;
+    max-width: 50%;
+    padding-right: 45px;
 
     > p {
-      padding-top: 0;
-      margin-top: -5px;
       flex-basis: auto;
+      margin-top: -5px;
+      padding-top: 0;
+
       line-height: 30px;
     }
   }
@@ -202,15 +207,16 @@
   .week-product__parametr {
     flex-basis: auto;
     margin-top: 13px;
+
     font-size: 15px;
     line-height: 20px;
   }
 
-.week-product__parametr-title p,
-.week-product__parametr-description span {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+  .week-product__parametr-title p,
+  .week-product__parametr-description span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   .week-product__order-price {
     flex-basis: auto;
@@ -218,18 +224,21 @@
   }
 
   .week-product__price {
+    padding-bottom: 34px;
+
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 34px;
     // font-size: 2.604166666666667vw;
     // line-height: 1.2em;
   }
 
   .week-product__image {
-    flex-basis: 50%;
-    text-align: right;
-    padding-top: 4px;
+    min-width: 334px;
+    max-width: 50%;
     height: 404px;
+    padding-top: 4px;
+
+    text-align: right;
   }
 }
 
@@ -254,7 +263,6 @@
     justify-content: flex-start;
     padding-right: 0;
 
-
     h2 {
       order: 1;
     }
@@ -266,11 +274,10 @@
   }
 
   .week-product__description-info {
-    padding-top: 167px;
     width: 525px;
-    box-sizing: border-box;
-    padding-left: 175px;
+    padding-top: 167px;
     padding-right: 58px;
+    padding-left: 175px;
   }
 
   .week-product__parametr {

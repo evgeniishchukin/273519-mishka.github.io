@@ -4,14 +4,14 @@
   display: flex;
   flex-basis: 147px;
   justify-content: space-between;
-  padding-bottom: 21px;
   align-items: baseline;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .social-links {
-    padding-bottom: 0;
-    margin-left: 80px;
     margin-top: 5px;
+    margin-left: 80px;
+    padding-bottom: 0;
   }
 }
