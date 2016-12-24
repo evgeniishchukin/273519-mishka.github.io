@@ -73,7 +73,6 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("build/img"));
   });
 
-
   gulp.task("build", function(fn) {
     run(
       "clean",

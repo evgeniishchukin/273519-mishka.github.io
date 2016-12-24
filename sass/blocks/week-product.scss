@@ -256,11 +256,8 @@
   }
 
   .week-product__header-wrapper {
-    position: absolute;
-    top: 107px;
-    left: 0;
-
     justify-content: flex-start;
+    margin-top: 107px;
     padding-right: 0;
 
     h2 {
@@ -275,7 +272,7 @@
 
   .week-product__description-info {
     width: 525px;
-    padding-top: 167px;
+    padding-top: 2px;
     padding-right: 58px;
     padding-left: 175px;
   }
@@ -285,7 +282,21 @@
   }
 
   .week-product__image {
+    position: relative;
+
     width: 525px;
-    height: 636px;
+    height: auto;
+    min-height: 469px;
+    overflow: visible;
+
+    img {
+      position: absolute;
+      top: -162px;
+      left: 0;
+      z-index: -1;
+
+      width: 525px;
+      height: 636px;
+    }
   }
 }
