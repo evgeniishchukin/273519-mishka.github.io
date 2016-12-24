@@ -102,12 +102,7 @@
 
     background: url("../img/icon-video.svg") no-repeat;
     background-position: 50% 50%;
-    filter: grayscale(1);
   }
-}
-
-.catalog__video:hover h3::before {
-  filter: grayscale(0);
 }
 
 .catalog__video-wrapper p {
@@ -147,11 +142,12 @@
 
   .catalog__video {
     padding-top: 0;
-    padding-bottom: 13px;
+    padding-bottom: 0;
   }
 
   .catalog__wrapper {
     padding-top: 81px;
+
   }
 
   .catalog__video-container {
@@ -170,6 +166,7 @@
     padding-top: 38px;
     padding-right: 6.456456456456456%;
     padding-left: 6.456456456456456%;
+    padding-bottom: 45px;
 
     h3 {
       padding-left: 62px;
