@@ -6,8 +6,9 @@
 }
 
 .page-header__title-block {
-  background-color: $color-lightgray;
   overflow: hidden;
+
+  background-color: $color-lightgray;
 
   &--index {
     background-color: #fafafa;
@@ -28,7 +29,7 @@
     z-index: 1;
 
     box-sizing: border-box;
-    height: 281px;
+    min-height: 281px;
     padding-top: 70px;
     padding-bottom: 0;
 
@@ -107,7 +108,7 @@
       z-index: 0;
 
       box-sizing: border-box;
-      height: 626px;
+      min-height: 626px;
       padding-top: 152px;
 
 
