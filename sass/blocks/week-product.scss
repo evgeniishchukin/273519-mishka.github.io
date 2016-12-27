@@ -235,7 +235,8 @@
   .week-product__image {
     min-width: 334px;
     max-width: 50%;
-    height: 404px;
+    min-height: 404px;
+    height: auto;
     padding-top: 4px;
 
     text-align: right;
